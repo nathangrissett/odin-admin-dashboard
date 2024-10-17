@@ -1,0 +1,256 @@
+@font-face {
+    font-family: Roboto-Light;
+    src: url(./Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Black;
+    src: url(./Roboto/Roboto-Black.ttf);
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: "Roboto-Light", sans-serif;
+}
+
+h1, h3, h4, h5, h6 {
+    font-family: "Roboto-Black", sans-serif;
+}
+
+.cat {
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.cat2 {
+    width: 60px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 15px;
+    padding-bottom: 2%;
+}
+
+p {
+    font-size: 14px;
+    color: gray;
+}
+
+.dash {
+    display: flex;
+    align-items: center;
+}
+
+.svg {
+    filter: invert(100%) sepia(97%) saturate(13%) hue-rotate(237deg) brightness(104%) contrast(104%);
+    width: 20%;
+}
+
+.svg2 {
+    filter: invert(100%) sepia(97%) saturate(13%) hue-rotate(237deg) brightness(104%) contrast(104%);
+    width: 10%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.25fr;
+    grid-template-rows: 0.5fr 0.5fr 8fr;
+    height: 100vh;
+}
+
+.dashboard {
+    grid-area: 1 / 1 / -1 / 2;
+    color: white;
+    background-color: #09f;
+}
+
+.dashboard div {
+    padding-bottom: 40px;
+}
+
+.dashboard div > * {
+    padding: 5px 0 5px 10px;
+}
+
+.search {
+    grid-area: 1 / 2 / 2 / -1;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.searchbox::before {
+    content: url(./magnify.svg);
+    display: inline-block;
+    width: 1.2em;
+    position: absolute;
+    left: 7.4%;
+}
+
+.morgan {
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    align-content: center;
+    grid-auto-flow: column;
+    gap: 8%;
+    margin-right: 15%;
+}
+
+.bell {
+    width: 20px;
+}
+
+button {
+    height: 35px;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    background-color: #09f;
+}
+
+.button {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    gap: 10%;
+    padding-right: 10%;
+}
+
+.hi {
+    grid-area: 2 / 2 / 3 / -1;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0.5% 1%;
+}
+
+.hello {
+    display: flex;
+    gap: 3%;
+    padding-left: 3%;
+    align-items: center;
+}
+
+.projects {
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: #eaeaea;
+}
+
+.title {
+    margin: 25px 25px 12.5px 0;
+}
+
+.title2 {
+    margin: 25px 25px 12.5px 25px;
+}
+
+.right-column {
+    grid-area: 3 / -2 / -1 / -1;
+    display: flex;
+    flex-direction: column;
+    background-color: #eaeaea;
+    height: 100%;
+}
+
+input {
+    height: 25px;
+    width: 80%;
+    background-color: rgb(227, 227, 227);
+    border-radius: 20px;
+    margin-left: 12%;
+}
+
+.container {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 25% 25%;
+    gap: 5%;
+    margin: 0 25px 25px 25px;
+}
+
+.box {
+    display: grid;
+    grid-template-rows: 1fr 5fr 3fr;
+    padding: 8% 5% 8% 8%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgb(233, 186, 0), rgb(233, 186, 0)), 
+    linear-gradient(#fff, #fff);
+    background-size: 2.5%, 100%;
+    background-position: left top, left top;
+}
+
+.icons {
+    display: flex;
+    justify-content: right;
+    gap: 8%;
+    padding-right: 4%;
+}
+
+.inside-box {
+    width: 20px;
+}
+
+.rectangle {
+    background-color: white;
+    margin: 0 25px 0 0;
+    padding: 10%;
+    border-radius: 10px;
+}
+
+.rectangle > div {
+    min-height: 57px;
+}
+
+.rectangle2 > div {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 3fr;
+}
+
+.one {
+    display: grid;
+    gap: 15px;
+}
+
+.two {
+    border-bottom: 0.5px solid #aaa;
+    padding-bottom: 15px;
+}
+
+.rectangle > div > h6 {
+    font-size: 13px;
+}
+
+.rectangle > div > p {
+    font-size: 11px;
+}
